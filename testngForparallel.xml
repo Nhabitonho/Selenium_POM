@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="2" parallel="methods">
+    <test name="Test">
+        <parameter name="evn" value="production"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.ABTest"/>
+            <class name="tests.AddRemoveTest"/>
+            <class name="tests.Broken_ImgTest"/>
+            <class name="tests.BasicAuthTest"/>
+            <class name="tests.Form_AuthTest"/>
+        </classes>
+    </test>
+</suite>
